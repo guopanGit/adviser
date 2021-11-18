@@ -1,19 +1,32 @@
 // app.js
 App({
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    // 获取系统信息  获取导航栏高度
+    let systemInfo = wx.getSystemInfoSync();
+    let model = systemInfo.model;
+    this.globalData.height = systemInfo.statusBarHeight
+    this.globalData.isIphoneX = /iphone\sx/i.test(model) || (/iphone/i.test(model) && /unknown/.test(model)) || /iphone\s11/i.test(model);
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    // 检查更新
+    const updateManager = wx.getUpdateManager();
+    updateManager.onCheckForUpdate((res) => {
+      if (res.hasUpdate) {
+        updateManager.onUpdateReady((res) => {
+          wx.showModal({
+            title: "更新提示",
+            content: "新版本已经准备好，是否重启小程序？",
+            success: (res) => {
+              if (res.confirm) {
+                updateManager.applyUpdate();
+              }
+            }
+          })
+        })
       }
     })
   },
+
   globalData: {
-    userInfo: null
+    isIphoneX: false
   }
 })
