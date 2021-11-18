@@ -1,0 +1,182 @@
+<!--pages/project/project.wxml-->
+<view wx:if="{{type}}" class="pageWrap">
+    <image class="ad" src="/image/bander.png" mode="aspectFill"/>
+    <view class="top">
+        <view class="titleWrap">
+            <view class="title">送件侠</view>
+            <view class="type">互联网/快递</view>
+            <view class="num">5-10万</view>
+        </view>
+        <view class="plan">融资中 / 融资中 / 融资中</view>
+        <view class="brief">送件侠是全新的互联网聚合支付品隶属于浙江省杭州市快乐一天
+            股份有限公司，目前已有3000份成交，累计服务60000商家。
+        </view>
+        <view class="tally">
+            <view class="tallyItem">
+                <view class="man c41">3w</view>
+                <view class="name c9">浏览</view>
+            </view>
+            <view class="tallyItem">
+                <view class="man c41">3000</view>
+                <view class="name c9">收藏</view>
+            </view>
+            <view class="tallyItem">
+                <view class="man c41">25</view>
+                <view class="name c9">咨询</view>
+            </view>
+            <view class="tallyItem">
+                <view class="man c41">3000</view>
+                <view class="name c9">考察</view>
+            </view>
+        </view>
+    </view>
+    <view class="middle">
+        <view class="middleTitle">参谋分析 项目介绍</view>
+        <view class="items">
+            <view class="item fenxi" bindtap="toDetails">
+                <view class="itemName">市场趋势</view>
+                <view class="duration">时长3分钟</view>
+                <view wx:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA"/>
+                    <text class="fulfilText">已看40%</text>
+                </view>
+                <view wx:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已看完</text>
+                </view>
+            </view>
+            <view class="item qushi" bindtap="toDetails">
+                <view class="itemName">商业模式</view>
+                <view class="duration">时长3分钟</view>
+                <view wx:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="20" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA"/>
+                    <text class="fulfilText">已看40%</text>
+                </view>
+                <view wx:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已看完</text>
+                </view>
+            </view>
+            <view class="item muoshi" bindtap="toDetails">
+                <view class="itemName">产品展示</view>
+                <view class="duration">时长3分钟</view>
+                <view wx:if="{{false}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="40" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA"/>
+                    <text class="fulfilText">已看40%</text>
+                </view>
+                <view wx:if="{{true}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已看完</text>
+                </view>
+            </view>
+            <view class="item shili" bindtap="toDetails">
+                <view class="itemName">产品展示</view>
+                <view class="duration">时长3分钟</view>
+                <view wx:if="{{false}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="40" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA"/>
+                    <text class="fulfilText">已看40%</text>
+                </view>
+                <view wx:if="{{true}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已看完</text>
+                </view>
+            </view>
+            <view class="item jieshao" bindtap="toDetails">
+                <view class="itemName">公司实力</view>
+                <view class="duration">时长3分钟</view>
+                <view wx:if="{{false}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="40" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA"/>
+                    <text class="fulfilText">已看40%</text>
+                </view>
+                <view wx:if="{{true}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已看完</text>
+                </view>
+            </view>
+            <view class="item anli" bindtap="toDetails">
+                <view class="itemName">项目收益</view>
+                <view class="duration">时长3分钟</view>
+                <view wx:if="{{false}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="70" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA"/>
+                    <text class="fulfilText">已看40%</text>
+                </view>
+                <view wx:if="{{true}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已看完</text>
+                </view>
+            </view>
+            <view class="item liucheng" bindtap="toDetails">
+                <view class="itemName">合作流程</view>
+                <view class="duration">时长3分钟</view>
+                <view wx:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="60" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA"/>
+                    <text class="fulfilText">已看40%</text>
+                </view>
+                <view wx:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已看完</text>
+                </view>
+            </view>
+            <view class="item zhichi" bindtap="toDetails">
+                <view class="itemName">赋能支持</view>
+                <view class="duration">时长3分钟</view>
+                <view wx:if="{{true}}" class="progressWrap">
+                    <progress class="progress" style="border-radius: 6px;overflow: hidden;"
+                              percent="50" active="{{true}}" stroke-width="6"
+                              active-color="#37CDA1" background-color="#EAEAEA"/>
+                    <text class="fulfilText">已看40%</text>
+                </view>
+                <view wx:if="{{false}}" class="state">
+                    <image class="fulfil" src="/image/wancheng.png" mode="aspectFill"/>
+                    <text class="fulfilText">已看完</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom {{isIphoneX ? 'ipx' : ''}}">
+        <view class="bottomTitle">项目课程</view>
+        <biock wx:for="{{1}}">
+            <view bindtap="clickCourse">
+                <image class="videoImg" src="/image/bander.png" mode="aspectFill"/>
+                <view class="flex">
+                    <view class="name">送件侠送件侠送件侠送件</view>
+                    <view class="count">5000人加入学习</view>
+                </view>
+                <view class="flex">
+                    <view class="intro">送件侠送件侠送件侠送件</view>
+                    <view class="price">30分钟 / ￥99.9</view>
+                </view>
+            </view>
+        </biock>
+    </view>
+    <view class="btnWrap">
+        <view class=""></view>
+        <view class="btn">
+            <view class="left">
+                <text>预约咨询</text>
+            </view>
+            <view class="">
+                <view class="right">
+                    <text>立即沟通</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view wx:if="{{!type}}" class="">
+    无网络
+</view>

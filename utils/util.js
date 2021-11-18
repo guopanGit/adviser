@@ -188,3 +188,23 @@ export function network() {
   })
 }
 
+/**
+ * 设置头部导航
+ * */
+export function setNav(title, color) {
+  wx.setNavigationBarTitle({
+    title
+  })
+  let fc = '#000000'
+  let bc = '#ffffff'
+  if (color) {
+    fc = '#ffffff'
+    bc = '#3d74f3'
+  }
+  wx.setNavigationBarColor({
+    frontColor: fc,
+    backgroundColor: bc,
+  })
+
+}
+
