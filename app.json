@@ -1,8 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "component/ec-canvas/wx-canvas"
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",

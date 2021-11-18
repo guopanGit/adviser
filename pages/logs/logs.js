@@ -1,19 +1,19 @@
-// logs.js
-import * as echarts from '../../component/ec-canvas/echarts';
+import * as echarts from '../../ec-canvas/echarts';
 
+const app = getApp();
 
 function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
-    width: 500,
-    height: 500,
+    width: width,
+    height: height,
     devicePixelRatio: dpr // new
   });
   canvas.setChart(chart);
 
   let option = {
     title: {
-      text: 'Referer of a Website',
-      subtext: 'Fake Data',
+      text: '饼状图',
+      subtext: '大饼',
       left: 'center'
     },
     tooltip: {
@@ -21,7 +21,7 @@ function initChart(canvas, width, height, dpr) {
     },
     legend: {
       orient: 'vertical',
-      left: 'left'
+      left: 'right',
     },
     series: [
       {
@@ -29,11 +29,11 @@ function initChart(canvas, width, height, dpr) {
         type: 'pie',
         radius: '50%',
         data: [
-          { value: 1048, name: 'Search Engine' },
-          { value: 735, name: 'Direct' },
-          { value: 580, name: 'Email' },
-          { value: 484, name: 'Union Ads' },
-          { value: 300, name: 'Video Ads' }
+          { value: 1048, name: '微信' },
+          { value: 735, name: '抖音' },
+          { value: 580, name: '头条' },
+          { value: 484, name: '小程序' },
+          { value: 300, name: 'app' }
         ],
         emphasis: {
           itemStyle: {
@@ -51,7 +51,14 @@ function initChart(canvas, width, height, dpr) {
 }
 
 Page({
-
+  onShareAppMessage: function (res) {
+    return {
+      title: 'ECharts 可以在微信小程序中使用啦！',
+      path: '/pages/index/index',
+      success: function () { },
+      fail: function () { }
+    }
+  },
   data: {
     ec: {
       onInit: initChart

@@ -1,4 +1,4 @@
-<!--logs.wxml-->
-<view class="container">
-  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+<!--index.wxml-->
+  <view class="container">
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
 </view>
