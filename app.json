@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "component/ec-canvas/wx-canvas"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+  ,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
