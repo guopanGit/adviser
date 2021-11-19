@@ -198,11 +198,11 @@
 }
 
 .bottom {
-    padding: 24rpx 28rpx;
+    padding: 24rpx 28rpx 140rpx 28rpx;
 }
 
 .ipx {
-    padding-bottom: 80rpx;
+    padding-bottom: 180rpx;
 }
 
 .bottomTitle {
@@ -250,8 +250,13 @@
     justify-content: space-between;
     width: 750rpx;
     height: 98rpx;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding:0 12rpx 0 54rpx;
     background-color: #fff;
+    box-shadow: 0 0 8rpx 0 rgba(0,0,0,0.25);
 }
 
 .ipxNav {
@@ -264,6 +269,21 @@
     font-size: 28rpx;
     color: #666;
 }
+
+.icon-fenxiang{
+    font-size: 48rpx;
+}
+
+.icon-naozhong{
+    font-size: 48rpx;
+    margin-right: 32rpx;
+}
+
+.icon-dianhua{
+    font-size: 48rpx;
+    margin-right: 32rpx;
+}
+
 
 .shareBtn{
     width: 100rpx !important;
@@ -288,7 +308,9 @@
 .left, .right {
     width: 284rpx;
     height: 82rpx;
-    line-height: 82rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0 22rpx 0 44rpx;
 }
 

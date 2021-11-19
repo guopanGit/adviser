@@ -165,17 +165,17 @@
     </view>
     <view class="btnWrap {{isIphoneX ? 'ipxNav' : ''}}">
         <view class="shareWrap">
-            <text>icon</text>
+            <text class="iconfont icon-fenxiang"></text>
             <view class="">分享</view>
             <button class="shareBtn" size="mini" open-type="share">分享</button>
         </view>
         <view class="btn">
             <view class="left">
-                <text>icon</text>
+                <text class="iconfont icon-naozhong"></text>
                 <text>预约咨询</text>
             </view>
             <view class="right">
-                <text>icon</text>
+                <text class="iconfont icon-dianhua"></text>
                 <text>立即沟通</text>
             </view>
         </view>
