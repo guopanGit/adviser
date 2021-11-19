@@ -149,7 +149,7 @@
     </view>
     <view class="bottom {{isIphoneX ? 'ipx' : ''}}">
         <view class="bottomTitle">项目课程</view>
-        <biock wx:for="{{1}}">
+        <block wx:for="{{1}}" wx:key="index">
             <view bindtap="clickCourse">
                 <image class="videoImg" src="/image/bander.png" mode="aspectFill"/>
                 <view class="flex">
@@ -161,18 +161,22 @@
                     <view class="price">30分钟 / ￥99.9</view>
                 </view>
             </view>
-        </biock>
+        </block>
     </view>
-    <view class="btnWrap">
-        <view class=""></view>
+    <view class="btnWrap {{isIphoneX ? 'ipxNav' : ''}}">
+        <view class="shareWrap">
+            <text>icon</text>
+            <view class="">分享</view>
+            <button class="shareBtn" size="mini" open-type="share">分享</button>
+        </view>
         <view class="btn">
             <view class="left">
+                <text>icon</text>
                 <text>预约咨询</text>
             </view>
-            <view class="">
-                <view class="right">
-                    <text>立即沟通</text>
-                </view>
+            <view class="right">
+                <text>icon</text>
+                <text>立即沟通</text>
             </view>
         </view>
     </view>

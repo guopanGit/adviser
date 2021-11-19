@@ -212,13 +212,13 @@
     color: #333;
 }
 
-.videoImg{
+.videoImg {
     width: 694rpx;
     height: 272rpx;
     border-radius: 12rpx;
 }
 
-.flex{
+.flex {
     margin-top: 10rpx;
 }
 
@@ -228,7 +228,7 @@
     color: #333;
 }
 
-.count{
+.count {
     font-size: 24rpx;
     color: #666;
 }
@@ -244,23 +244,60 @@
     color: #f96d09;
 }
 
-.btn{
-    width: 496rpx;
+.btnWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750rpx;
+    height: 98rpx;
+    padding:0 12rpx 0 54rpx;
+    background-color: #fff;
+}
+
+.ipxNav {
+    height: 148rpx;
+    padding:0 12rpx 50rpx 54rpx;
+}
+
+.shareWrap {
+    position: relative;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.shareBtn{
+    width: 100rpx !important;
+    height: 82rpx;
+    position: absolute;
+    top: -10rpx;
+    left: -4rpx;
+    background-color: #000;
+    opacity: 0;
+}
+
+
+.btn {
+    width: 568rpx;
     height: 82rpx;
     display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 36rpx;
 }
 
-.left,.right{
+.left, .right {
     width: 284rpx;
     height: 82rpx;
+    line-height: 82rpx;
+    padding: 0 22rpx 0 44rpx;
 }
 
-.left{
+.left {
     border-radius: 20rpx 0 0 20rpx;
     background-color: #4171f7;
 }
 
-.right{
+.right {
     background-color: #4eaf55;
-    border-radius: 0 20rpx  20rpx 0;
+    border-radius: 0 20rpx 20rpx 0;
 }
