@@ -174,7 +174,7 @@
                 <text class="iconfont icon-naozhong"></text>
                 <text>预约咨询</text>
             </view>
-            <view class="right">
+            <view class="right" bindtap="callPhone">
                 <text class="iconfont icon-dianhua"></text>
                 <text>立即沟通</text>
             </view>

@@ -61,6 +61,13 @@ Page({
     showToast('点击课程')
   },
 
+  // 立即沟通
+  callPhone() {
+    wx.makePhoneCall({
+      phoneNumber: '110'
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -79,8 +86,10 @@ Page({
   /**
    * 生命周期函数--监听分享
    */
-  onShareAppMessage(){
-
+  onShareAppMessage() {
+    return {
+      title: '项目参谋'
+    }
   }
 
 })
